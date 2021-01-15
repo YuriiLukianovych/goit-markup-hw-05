@@ -332,9 +332,6 @@ img {
   fill: currentColor;
 }
 /* ----------------------------------------- clients ----------------------------------------- */
-.clients .title{
-  color: #AFB1B8;
-}
 .clients-list {
   display: flex;
   justify-content: space-between;
