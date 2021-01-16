@@ -289,6 +289,27 @@ img {
   flex-basis: calc(100% / 3 - var(--card-gap));
   margin-left: var(--card-gap);
 }
+.work-list-img-wrap{
+  position: relative;
+}
+.work-list-text{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  height: 70px;
+  width: 100%;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+}
 .work-image {
 }
 
@@ -400,6 +421,25 @@ img {
 .portfolio {
   border-top: 1px solid #ececec;
 }
+.project-preview-wrap{
+  position: relative;
+  overflow: hidden;
+}
+/* overlay --------- */
+.overlay{
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+  color: #000;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+}
+/* ------------------ */
 .portfolio-nav-list {
   display: flex;
   justify-content: center;
@@ -465,6 +505,10 @@ img {
 .project-link:focus{
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-link:hover .overlay,
+.project-link:focus .overlay{
+  transform: translateY(0);
 }
 .projects-content {
   padding: 20px 24px;
